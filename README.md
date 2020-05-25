@@ -5,10 +5,10 @@ Contents
   3. [Development](#development)
   4. [Evalution](#evalution)
   
-    Planning 
+   Planning 
   ----------
   
-    Design 
+   Design 
   ----------
   
   Development 
