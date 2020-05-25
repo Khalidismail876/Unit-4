@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="Palidrome();">Get Value</button>
+    <p id="palidrome"></p>
+
+
+    <script>
+        function Palidrome() {
+            let str = document.getElementById("myInput").value;
+            // Use the split() method to return a new array
+            var splitString = str.split(""); 
+        
+            // Use the reverse() method to reverse the new created array
+            var reverseArray = splitString.reverse(); 
+        
+            // Use the join() method to join all elements of the array into a string
+            var joinArray = reverseArray.join(""); 
+            if (joinArray == str){ // this condition is used to check if the joinarray is same as the string
+                //alert("The Entered String is Palindrome")
+                document.getElementById("palidrome").innerHTML = "The Entered String is Palindrome";
+                console.log("The Entered String is Palindrome")
+                
+
+            }else{
+                //alert("The Entered String is not Palindrome")
+                document.getElementById("palidrome").innerHTML = "The Entered String is not Palindrome";
+                console.log("The Entered String is not Palindrome")
+
+            }
+        }
+    </script>
+    
+</body>
+</html>
