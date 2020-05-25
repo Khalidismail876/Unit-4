@@ -1,1 +1,12 @@
-
+Summary - the first computer appeared in 1950 to 1960 and it was only owned by big companies. These networks were called 
+local area network or LAT and they often be as small as an entire room or as big as a university campus. Most famous of
+of these LATs was called ethenets, they used to be used in 1970 and its still been used till today. The ethenet works with 
+other ethenet computers and they are connected through ethenet cable that carries messages from one ethenet to another. To
+avoid any confusion while sending messages, ethenet computers all have thier 'mac address' which creates a better communication.
+These ethenets computers suffer what is called collision which is caused when multiple computers are sending messages. This
+makes the computer confused and the ethenet cable can't submit a proper message. They avoid this by using random timer, this 
+is not a good solution but it helps them communicate. They started to create another solution which is by assigning each 
+computer to its own cable and this process is called collision domain. Anothe solution they rely on routing which trasmits 
+a signal to its destination but this is expensive to a lot of user. Message switching is another way that messages are 
+send, this makes the messages pass multiple hop counts. To finaly solve all these messages from colliding, they creates 
+ipaddress which another term that they called packets and that is how each device got its ipaddress.
