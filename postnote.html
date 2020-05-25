@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p.post {
+            border-style: solid;
+            width: 500px;
+            height: 200px;
+            background-color:orange;
+            padding: 100px 0;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="postit();">Get Value</button>
+    <p id="myDiv" class="post" style="font:italic bold 50px Georgia,serif;" ></p>
+    <script>
+        function postit(){
+            let input = document.getElementById("myInput").value;
+            document.getElementById("myDiv").innerHTML = input;
+        }
+
+    </script>
+</body>
+</html>
