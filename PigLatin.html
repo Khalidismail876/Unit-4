@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pig Latin</h1>
+    <p>Enter a word</p>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    <p id="demo"></p>
+    <script>
+        function getInputValue(){
+            var inputVal = document.getElementById("myInput").value;
+            inputVal = inputVal.toLowerCase()
+            const vowels = ["a", "e", "i", "o", "u"];
+            result = inputVal.split('');
+            if (vowels.includes(inputVal[0])) {
+                alert("The Pig Latin is: " + inputVal + "way")
+            }else{
+                for (let i = 0; i < inputVal.length; i++) {
+                // Loop through until the first vowel is found
+                    if (!vowels.includes(inputVal[i])) {
+                    // Store the index at which the first vowel exists
+                        result.push(result.shift());
+                    }else{
+                        result.push('ay');
+                        alert("The Pig Latin is: " + result.join(''));
+                        break;
+
+                    }
+                    
+                }
+            }
+        }
+    </script>
+         
+        
+    </script>
+</body>
+</html>
