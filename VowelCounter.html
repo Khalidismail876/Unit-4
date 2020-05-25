@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get the Value of Text Input Field in JavaScript</title>
+</head>
+<body>
+    <h1>Vowel Counter</h1>
+    <p>Enter a Sentence Below</p>
+    <input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="vowel_count();">Get Value</button>
+    <p id="tot_val"></p>
+    <p id="A_val"></p>
+    <p id="E_val"></p>
+    <p id="I_val"></p>
+    <p id="O_val"></p>
+    <p id="U_val"></p>
+    
+
+    <script>
+        
+        function vowel_count(){
+            let str1 = document.getElementById("myInput").value;
+            const vowels = ["a", "e", "i", "o", "u"];
+            var vcount = 0;
+            let a = 0;
+            let e = 0;
+            let i = 0;
+            let o = 0;
+            let u = 0;
+            for(var x = 0; x < str1.length ; x++){
+                if (vowels[0].indexOf(str1[x]) !== -1){
+                    a += 1;
+                    vcount += 1;
+
+                }else if (vowels[1].indexOf(str1[x]) !== -1){
+                    e += 1;
+                    vcount += 1;
+
+                } else if (vowels[2].indexOf(str1[x]) !== -1){
+                    i += 1;
+                    vcount += 1;
+
+                } else if (vowels[3].indexOf(str1[x]) !== -1){
+                    o += 1;
+                    vcount += 1;
+
+                } else if (vowels[4].indexOf(str1[x]) !== -1){
+                    u += 1;
+                    v
+
+
+                }
+
+                }
+            document.getElementById("tot_val").innerHTML = "Number of Vowels" + ":" +vcount;
+            console.log("Number of Vowels" + ":" +vcount);
+            document.getElementById("A_val").innerHTML = "a" + ": " + a;
+            console.log("a" + ": " + a);
+
+            document.getElementById("E_val").innerHTML = "e" + ": " +e;
+            console.log("e" + ": " +e);
+
+            document.getElementById("I_val").innerHTML = "i" + ": " +i;
+            console.log("i" + ": " +i);
+
+            document.getElementById("O_val").innerHTML = "o" + ": " +o;
+            console.log("o" + ": " +o);
+
+            document.getElementById("U_val").innerHTML = "u" + ": " +u;
+            console.log("u" + ": " +u);
+            
+
+        }
+            
+    </script>
+</body>
+</html>
