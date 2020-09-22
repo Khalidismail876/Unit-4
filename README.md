@@ -47,6 +47,11 @@ More Criteria is coming
   
    Design 
   ----------
+  ### The figure below shows an outline of the application
+
+![MartialDec](Systemdiagram.png)
+
+**Fig. 1.** SYSTEM DIAGRAM 
   
   Development 
   ----------
