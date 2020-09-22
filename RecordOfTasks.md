@@ -7,9 +7,16 @@
 |         5   | Creating Success Criteria | I need to create success criteria as in an outline for everthing that need to be in the website. These success criterias are all based on client's needs and requirements | 30 mins| June 9th, 2020| A |
 |       6     | Creating grids for each learning page | This will devide each learning course from others, it will also be easy for the user to see which course is which | 1 hour and 30 mins | june 23rd, 2020 | C |
 |     7       | gethering free to use picture/ coding into the website | This picture will be used to make a visual application which helps the use to identify which courses are which | 40 mins | July 13th, 2020 | C |
-|     8       | Designing the search button | This will help the user look for any lessons they need from any course
-|    9        |
-|       10    |
+|     8       | Designing the search button | This will help the user look for any lessons they need from any course | 30 mins | July 20th, 2020 | C |
+|    9        | Create hover animation for each grid to show the available course/ create a external link in each grid | This is to help the user distinguish between course and also see the general sub courses in each grid | 1 hour | Aug 5th, 2020 | C |
+|       10    | Create registration/login button | This will help the users create their own account in which they keep track on their progress in each course | 30 mins | Aug 7th, 2020 | C |
+| 11          |
+| 12          |
+| 13          |
+| 14          |
+| 15          |
+| 16          |
+
 
 
 
