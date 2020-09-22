@@ -49,7 +49,7 @@ More Criteria is coming
   ----------
   ### The figure below shows an outline of the application
 
-![MartialDec](Systemdiagram.png)
+![MartialDec](systemdiagram.png)
 
 **Fig. 1.** SYSTEM DIAGRAM 
   
