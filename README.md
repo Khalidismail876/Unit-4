@@ -49,10 +49,23 @@ More Criteria is coming
   ----------
   ### The figure below shows an outline of the application
 
-  ![MartialDec](sysdg.png)
+ ![MartialDec](sysdg.png)
 
 **Fig. 1.** SYSTEM DIAGRAM 
-  
+
+### The figure below shows a flowchart for the autosave algorithm 
+
+![MartialDec](autosave.png)
+
+**Fig.2.** AUTOSAVE FLOWCHART  
+
+  The Flowchart displays the steps that the website will take when the user opens the website. It opens a port for the user 
+  and in that port, the user would be asked if they have an account or not. If they don't have an account, then they can register
+  and create a new account while their data will be saved in the database with hash security. This will take the user back to the first
+  page and allow them to login. Then the website will check if the new data entering is valid but checking through the database, if it 
+  exists then the user will continue and start his progress. The last part of the flowchart shows how the website will keep track on the 
+  progress of the user by constantly saving after every 5 seconds. 
+
   Development 
   ----------
   
