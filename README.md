@@ -60,6 +60,8 @@ I chose to design a website due to the client’s demand for a website. All the 
 
 **Fig. 2.** SYSTEM DIAGRAM 
 
+This outline of the website will demonstrate how the data flows in the website as the user puts in information to get another information.
+
 ### The figure below shows a flowchart for the autosave algorithm 
 
 ![MartialDec](autosave.png)
