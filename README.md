@@ -62,11 +62,19 @@ I chose to design a website due to the client’s demand for a website. All the 
 
 This outline of the website will demonstrate how the data flows in the website as the user puts in information to get another information.
 
+ # WEBSITE GUI 
+  
+  ### This figure will display the shell of the website after the user login
+  ![MartialDec](website.png)
+
+**Fig.3.** WEBSITE GUI
+
+
 ### The figure below shows a flowchart for the autosave algorithm 
 
 ![MartialDec](autosave.png)
 
-**Fig.3.** AUTOSAVE FLOWCHART  
+**Fig.4.** AUTOSAVE FLOWCHART  
 
   The Flowchart displays the steps that the website will take when the user opens the website. It opens a port for the user 
   and in that port, the user would be asked if they have an account or not. If they don't have an account, then they can register
@@ -80,7 +88,7 @@ This outline of the website will demonstrate how the data flows in the website a
 
 ![MartialDec](bsearch.png)
 
-**Fig.4.** Search FLOWCHART  
+**Fig.5.** Search FLOWCHART  
 
 The Flowchart shown in figure 4 will demonstrate an algorithm that allowed the user to find any topic from the website. 
 This algorithm is called binary search as the search mechanic will sort all the array values then divide them into half 
