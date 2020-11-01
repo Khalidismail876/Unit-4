@@ -51,12 +51,12 @@ I chose to design a website due to the client’s demand for a website. All the 
 |     8       | Designing the search button | This will help the user look for any lessons they need from any course | 2 hours | July 20th, 2020 | C |
 |    9        | Create hover animation for each grid to show the available course/ create a external link in each grid | This is to help the user distinguish between course and also see the general sub courses in each grid | 4 hours | Aug 5th, 2020 | C |
 |       10    | Create registration/login button | This will help the users create their own account in which they keep track on their progress in each course | 1 hour | Aug 7th, 2020 | C |
-|       11    | Making the system Diagram | 
-|       12    | Making the flowcharts | 
-|       13    | Coding for Database blueprint | 
-|       14    | Coding for the registration/login | 
-|       15    | Coding for 
-|       16    |
+|       11    | Recreate system Diagram | This will be a better visualization and will help the user see how the website works | 2 hours |  Oct 20th, 2020 |  B | 
+|       12    | Making the flowcharts | create a flowchart that can be used to create a functional code, this flowcharts will be binary search and datasaving | 2 hours |  Oct 20th, 2020 |  B |
+|       13    | Coding for Database blueprint | create a blueprint that can hold all the information from the user | 2 hours |  Oct 22th, 2020 |  C |
+|       14    | Coding for the registration/login | Create a functional registration/ login to help the user create an account that will keep all his progress and information | 3 hours |  Oct 24th, 2020 |  B |
+|       15    | Coding for autosave | This function will help the user save all his data without them worrying about losing it | 2 hours |  Oct 25th, 2020 |  B |
+|       16    | coding for the Binary Search| Create a function that will help the user search for any value and get it without any issue | 2 hours |  Oct 25th, 2020 |  B |
 
   
    Design 
