@@ -93,6 +93,123 @@ and I also wanted to write a sorted algorithm within the binary search algorithm
   Development 
   ----------
   
+  ### Importance of the Code Provided Below
+  All the code provided below are a key factors that contribute the functionality of all the requirements that the client want in the website. 
+  These codes consist of algorithm codes that solve a specific function to codes that make the overall website run. 
+  
+  ### Registration, Login, and Database
+  
+  #### Creating the Blueprint for Database
+  ```.py
+  
+  class Dfile(db.Model):
+    __tablename__ = 'users'
+    id = database.column('id', db.Integer(1000), primary_key=TRUE)
+    email = database.column('email', db.String(100))
+    fn = database.column('fn', db.String(20))
+    ln = database.column('ln', db.String(20))
+    psw = database.column('psw', db.String(60))
+    
+ db.create_all()
+    
+  ```
+  The code above provides a blueprint of the database and will give an overview on what the table that all the 
+  user information will be saved. The table containes five columns and each column will contain a unique data
+  so that its easier to find user's information when they visit the website again.
+  
+  
+  #### The code blow shows the registration code algorithm
+  
+ ```.py
+ @app.route('/signup', method=['GET', 'POST'])
+def registration():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        fn = request.form.get('fn')
+        ln = request.form.get('ln')
+        psw = request.form.get('psw')
+        psw_repeat = request.form.get('psw_repeat')
+        scpsw = sha256_crypt.encrypt(str(psw))
+    
+    if '@' not in email:
+        flash("Enter a Valid email")
+        return render_template('registration.html')
+
+    if psw == psw_repeat:
+        hashpsw = sha256_crypt.encrypt(str(psw))
+        db.session.add(psw)
+        db.commit()
+        return redirect(url_for('login.html')
+    else:
+        flash("Enter a Valid email")
+        return render_template('registration.html')
+ 
+ ```
+ 
+ #### The code blow shows the login code algorithm
+ 
+ ```.py
+  @app.route('/login', method=['GET', 'POST'])
+  def login():
+    if request.method == 'POST':
+        email = request.form.get("email")
+        psw = request.form.get("psw")
+
+        storedemail = Dfile.query.filter_by(email).first()
+        storedpsw = Dfile.query.filter_by(psw).first()
+        if storedemail is None:
+            flash("Please Enter an Email")
+
+        else:
+            for password in storedpsw:
+                if sha256_crypt.verify(psw, password):
+                    flash("login successful")
+                    return redirect(url_for('index.html')
+                else:
+                    flash("password is incorrect")
+                    return render_template('login.html')
+  
+  ```
+  
+  #### Autosave 
+  
+  ```.py
+  @app.route('/autosave')
+def autosave():
+    if request.method == 'POST':
+        time.sleep(5)
+        db.session.add()
+        db.commit()
+```
+
+
+  #### Binary search code Algorith
+  
+```.py
+  @app.route('/binarysearch')
+def binary_search(array, search):
+    if request.method == 'POST':
+        search = form.getvalue('searchbox')
+        start_item = 0
+        end_item = len(array) - 1
+        while array.sort():
+            mid = (end_item + start_item) // 2
+            midvalue = array[mid]
+            if midvalue == search:
+                flash("Available items")
+                return mid
+            elif midvalue > search:
+                start_item = mid + 1
+                continue
+            elif midvalue < search:
+                end_item = mid - 1
+                continue
+            else:
+                flash("Available items")
+                return None
+```
+
+
   
   Evalution 
   ----------
