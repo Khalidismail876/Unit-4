@@ -54,9 +54,9 @@ I chose to design a website due to the client’s demand for a website. All the 
 |       11    | Recreate system Diagram | This will be a better visualization and will help the user see how the website works | 2 hours |  Oct 20th, 2020 |  B | 
 |       12    | Making the flowcharts | create a flowchart that can be used to create a functional code, this flowcharts will be binary search and datasaving | 2 hours |  Oct 20th, 2020 |  B |
 |       13    | Coding for Database blueprint | create a blueprint that can hold all the information from the user | 2 hours |  Oct 22th, 2020 |  C |
-|       14    | Coding for the registration/login | Create a functional registration/ login to help the user create an account that will keep all his progress and information | 3 hours |  Oct 24th, 2020 |  B |
-|       15    | Coding for autosave | This function will help the user save all his data without them worrying about losing it | 2 hours |  Oct 25th, 2020 |  B |
-|       16    | coding for the Binary Search| Create a function that will help the user search for any value and get it without any issue | 2 hours |  Oct 25th, 2020 |  B |
+|       14    | Coding for the registration/login | Create a functional registration/ login to help the user create an account that will keep all his progress and information | 3 hours |  Oct 24th, 2020 |  C |
+|       15    | Coding for autosave | This function will help the user save all his data without them worrying about losing it | 2 hours |  Oct 25th, 2020 |  C |
+|       16    | coding for the Binary Search| Create a function that will help the user search for any value and get it without any issue | 2 hours |  Oct 25th, 2020 |  C |
 
   
    Design 
