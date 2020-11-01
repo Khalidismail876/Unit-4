@@ -146,6 +146,13 @@ def registration():
  
  ```
  
+ The code asks the user for all the important information such as their email, firstname, lastnaame,
+ and password. The code also asks the user to reenter their password, the first decision starts with 
+ checking if the input email is a valid one, the second decision is made when the password is compared to 
+ second password to see if they match, if they do then the password is hashed and  everything is saved in the 
+ database.
+ 
+ 
  #### The code blow shows the login code algorithm
  
  ```.py
@@ -170,6 +177,13 @@ def registration():
                     return render_template('login.html')
   
   ```
+  The code check if the input email and password match to that one saved in the data base.
+  This is done by using query.filter_by which selects the a specific column and retrieves 
+  data from there. The first decision that is made is to check if email is empty, if its 
+  then you send a message, if its not empty then you check if the input password matches the 
+  one saved in the database and its done by unhashing the password from the database and 
+  comaparing it to the newly input one. If it matches then you login and you redirected to 
+  the main page.
   
   #### Autosave 
   
@@ -181,7 +195,9 @@ def autosave():
         db.session.add()
         db.commit()
 ```
-
+This code saves the progress that the user made every 5 seconds after something is changed from the database.
+It does this by rewriting the database constantly allowing the user to not lose a lot of data if a problem 
+arises. 
 
   #### Binary search code Algorith
   
@@ -209,6 +225,11 @@ def binary_search(array, search):
                 return None
 ```
 
+The code shown above will show the binary search algorithm that the search function will use in the website. The 
+code starts with a continues loop where the search function won't stop until the searched array is found. The algorith
+starts by finding the middle of saved data and compare that to the search value, if it doesn't match then the search 
+value is checked if its bigger or smaller than the middle and the process is repeated again but only in the section 
+that the search value is considered to be found. 
 
   
   Evalution 
