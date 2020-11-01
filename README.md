@@ -74,9 +74,25 @@ This outline of the website will demonstrate how the data flows in the website a
   page and allow them to login. Then the website will check if the new data entering is valid but checking through the database, if it 
   exists then the user will continue and start his progress. The last part of the flowchart shows how the website will keep track on the 
   progress of the user by constantly saving after every 5 seconds. 
+  
+  
+### The figure below shows a flowchart for the autosave algorithm 
+
+![MartialDec](bsearch.png)
+
+**Fig.4.** Search FLOWCHART  
+
+The Flowchart shown in figure 4 will demonstrate an algorithm that allowed the user to find any topic from the website. 
+This algorithm is called binary search as the search mechanic will sort all the array values then divide them into half 
+until the search value is found. In other words, the search will repeatedly split the saved data into half until the input 
+value is found and then brought into the user. I chose to use this mechanic due to it being more efficient than linear search 
+and I also wanted to write a sorted algorithm within the binary search algorithm. 
+
+
 
   Development 
   ----------
+  
   
   Evalution 
   ----------
